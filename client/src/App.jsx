@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 
 // For local dev: Vite proxy forwards /customers → localhost:5000
-// For Railway: change this to your backend URL, e.g. "https://your-app.up.railway.app/customers"
-const API_BASE = "/customers";
+const API_BASE = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/customers`
+  : "/customers";
 
 function getInitials(name) {
   return name
