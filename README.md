@@ -1,6 +1,6 @@
 # Customer Management Dashboard
 
-A full-stack web application to add, view, and delete customers.
+A full-stack web application to add, view, and delete customers. Live demo: https://arali-assignment-ten.vercel.app/
 
 **Stack:** React.js (Vite) · Node.js · Express · In-Memory Storage
 
